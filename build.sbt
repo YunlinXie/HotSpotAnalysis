@@ -3,7 +3,7 @@ import sbt.Keys.{libraryDependencies, scalaVersion, version}
 
 lazy val root = (project in file(".")).
   settings(
-    name := "CSE512-Hotspot-Analysis-Template",
+    name := "Hotspot-Analysis-Template",
 
     version := "0.1.0",
 
@@ -13,7 +13,7 @@ lazy val root = (project in file(".")).
 
     publishMavenStyle := true,
 
-    mainClass := Some("cse512.Entrance")
+    mainClass := Some("scala.Entrance")
   )
 
 libraryDependencies ++= Seq(
