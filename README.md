@@ -1,5 +1,5 @@
 ### Hot zone analysis
-This task will perform a range join operation on a rectangle datasets and a point dataset. For each rectangle, the number of points located within the rectangle will be obtained. The hotter rectangle means that it include more points. So this task is to calculate the hotness of all the rectangles. Associated files are "~/scr/main/scala/HotzoneAnalysis.scala" and "~/scr/main/scala/HotzoneUtils.scala".
+This task will perform a range join operation on a rectangle datasets and a point dataset. For each rectangle, the number of points located within the rectangle will be obtained. The hotter rectangle means that it include more points. So this task is to calculate the hotness of all the rectangles. Associated files are HotzoneAnalysis.scala and HotzoneUtils.scala inside src/main/scala.
 
 
 ### Hot cell analysis
@@ -78,5 +78,5 @@ An example input and answer are put in "testcase" folder of the coding template
 ### How to submit your code to Spark
 If you are using the Scala template
 1. Go to project root folder
-2. Run ```sbt clean assembly```. You need to install sbt in order to run this command. Then you will get a "target" directory under root directory, where you can find a jar file.
+2. Run ```sbt clean assembly```. You need to install sbt in order to run this command.
 3. Submit the jar to Spark using Spark command "./bin/spark-submit". A pseudo code example: ```./bin/spark-submit ~/ProjectRootFolder/target/scala-2.11/Hotspot-Analysis-Template-assembly-0.1.0.jar test/output hotzoneanalysis src/resources/point-hotzone.csv src/resources/zone-hotzone.csv hotcellanalysis src/resources/yellow_tripdata_2009-01_point.csv```
